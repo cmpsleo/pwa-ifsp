@@ -2,15 +2,15 @@ $(document).ready(function() {
     $('.modal').modal();
 });
 $('.code-scan').on('click', function() {
-    var width = $(window).width();
+    var w = $(window).width();
 
     Quagga.init({
         inputStream : {
             name : "Live",
             type : "LiveStream",
             constraints: {
-              width: width,
-              height: 233
+                width: w,
+                height: 233
             }
         },
         decoder : {
@@ -33,7 +33,6 @@ $('.code-scan').on('click', function() {
         $('#codigo_ticket').focus().val(code);
     });
 });
-
 
 navigator.serviceWorker.register('sw.js');
 
