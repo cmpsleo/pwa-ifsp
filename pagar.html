@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Itapê Shopping</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./dist/css/libs/materialize.min.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="nav-extended">
+            <div class="nav-wrapper green">
+                <div class="nav-wrapper green darken-1">
+                    <ul class="left">
+                        <a href="app.html"><i class="material-icons">arrow_back</i></a>
+                    </ul>
+
+                    <a class="brand-logo">Pagamento</a>
+
+                    <ul class="right">
+                        <li>
+                            <a href="javascript:;">
+                                <i class="material-icons dropdown-button" data-activates="more-itens">more_vert</i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section class="container">
+            <form method="post">
+                <div class="row">
+                    <div class="input-field col s8">
+                        <label for="codigo_ticket">Código Ticket</label>
+                        <input id="codigo_ticket" type="text">
+                    </div>
+
+                    <div class="input-field col s4">
+                        <a class="waves-effect btn-floating green code-scan" href="#scan">
+                            <i class="material-icons">camera</i>
+                        </a>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <label for="cartao_numero">Cartão de Crédito</label>
+                        <input type="text" id="cartao_numero">
+                    </div>
+
+                    <div class="input-field col s6">
+                        <label for="cartao_vencimento">Vencimento</label>
+                        <input type="text" id="cartao_vencimento">
+                    </div>
+
+                    <div class="input-field col s6">
+                        <label for="cartao_codigo">Código</label>
+                        <input type="text" id="cartao_codigo">
+                    </div>
+
+                    <button class="btn col s12 green waves-effect waves-light">Pagar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <div id="scan" class="modal">
+        <div class="modal-content">
+            <h5>Escaneie o Ticket</h5>
+
+            <div class="row">
+                <div id="interactive" class="viewport s12"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./dist/js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="./dist/js/libs/materialize.min.js"></script>
+    <script type="text/javascript" src="./dist/js/libs/quagga.min.js"></script>
+
+    <script type="text/javascript" src="./dist/js/barcode.js"></script>
+    <script type="text/javascript" src="./dist/js/spa.js"></script>
+
+    <script type="text/javascript">
+        var $toggleNav = $('.button-collapse');
+
+        $toggleNav.sideNav();
+
+        $(".dropdown-button").dropdown(); //inicia dropdown
+        $('.tabs').tabs(); //inicia abas
+        $('.modal').modal({
+        dismissible: false,
+        complete: function() { 
+            $(document).trigger('modalclose');
+        }
+        });
+    </script>
+</body>
+</html>

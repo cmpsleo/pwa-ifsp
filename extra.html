@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Itapê Shopping</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./dist/css/libs/materialize.min.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
+
+    <style>
+        .navbar-fixed { height: 70px; }
+    </style>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper green">
+                <div class="nav-wrapper green darken-1">
+                    <ul class="left">
+                        <a href="lojas.html"><i class="material-icons">arrow_back</i></a>
+                    </ul>
+
+                    <a class="brand-logo">Loja Extra</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section>
+            <article class="container">
+                <figure>
+                    <img class="img-fluid" src="./dist/img/lojas/extra-logo.png" title="Loja Extra" alt="Loja Extra">
+                </figure>
+
+                <h3>Hipermercado Extra</h3>
+
+                <p class="grey-text text-darken-1">
+                    Extra Hipermercados é uma rede varejista do Brasil. É uma das bandeiras do Grupo Pão de Açúcar, lançada em 1989 na cidade de Campo Grande. Dados de 8 de novembro de 2006 mostram que a rede tem 80 lojas em 12 estados e no Distrito Federal, totalizando 576.197 m² de área de vendas, 3.555 check-outs e 24.048 funcionários.
+                </p>
+            </article>
+
+            <article class="section green lighten-5">
+                <div class="container">
+                    <p>Localização: 099/100/101</p>
+                    <p>Telefone: (15) 3373-1738</p>
+                    <p>Funcionamento: 10h - 22h</p>
+                    <p>Contato: contato@extra.com.br</p>
+
+                    <br>
+
+                    <img class="img-fluid" src="./dist/img/lojas/extra-localizacao.png">
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./dist/js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="./dist/js/libs/materialize.min.js"></script>
+
+    <script type="text/javascript">
+        var $toggleNav = $('.button-collapse');
+
+        $toggleNav.sideNav();
+    </script>
+</body>
+</html>

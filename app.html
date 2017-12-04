@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Itapê Shopping</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="./dist/css/libs/materialize.min.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper green">
+                <a class="brand-logo" href="javascript:;">Itapê&nbsp;Shopping</a>
+                <a class="button-collapse" href="javascript:;" data-activates="mobile-nav">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="lojas.html">Conhecer as lojas</a></li>
+                    <li><a href="pagar.html">Pagar o estacionamento</a></li>
+                </ul>
+
+                <ul id="mobile-nav" class="side-nav">
+                    <li><a href="lojas.html">Conhecer as lojas</a></li>
+                    <li><a href="pagar.html">Pagar o estacionamento</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <section>
+            <article class="card">
+                <figure class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./dist/img/destaque-promocao.jpg" title="Compra premiada" alt="Compra premiada">
+                </figure>
+
+                <div class="card-content">
+                    <h2 class="card-title activator grey-text text-darken-4">
+                        Compra premiada
+                        <i class="material-icons right">more_vert</i>
+                    </h2>
+                </div>
+
+                <div class="card-reveal">
+                    <p class="card-title grey-text text-darken-4">
+                        Compra premiada
+                        <i class="material-icons right">close</i>
+                    </p>
+
+                    <p>A cada R$100,00 em compras ganhe 1 cupom e concorra a 01 Automóvel marca Toyota, modelo Etios Hach 1.3 16 V Dual VVTi Flex e 01 Moto marca Honda, modelo CG 125i.</p>
+                    
+                    <p>Período da promoção de 01/12/2016 à 07/03/2017, nas lojas participantes da promoção, até o fechamento das lojas. Para mais detalhes, segue abaixo o link para acesso ao regulamento completo.</p>
+                    
+                    <a href="#">Veja aqui o regulamento completo da promoção Compra Premiada Itapê Shopping</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <figure class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="./dist/img/destaque-shopping-itape.jpg" title="Itapê Shopping" alt="Itapê Shopping">
+                </figure>
+
+                <div class="card-content">
+                    <h2 class="card-title activator grey-text text-darken-4">
+                        Itapê Shopping
+                        <i class="material-icons right">more_vert</i>
+                    </h2>
+                </div>
+
+                <div class="card-reveal">
+                    <p class="card-title grey-text text-darken-4">
+                        Itapê Shopping
+                        <i class="material-icons right">close</i>
+                    </p>
+
+                    <p>O Itapetininga Shopping Center, inaugurado em novembro de 2002 com o passar dos anos ganhou grande importância no cenário comercial do interior Paulista, recebendo grandes marcas do varejo brasileiro, se transformando realmente em um shopping regional.</p>
+                    
+                    <a href="#">Para saber mais</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./dist/js/libs/jquery.min.js"></script>
+    <script type="text/javascript" src="./dist/js/libs/materialize.min.js"></script>
+
+    <script type="text/javascript">
+        var $toggleNav = $('.button-collapse');
+
+        $toggleNav.sideNav();
+    </script>
+</body>
+</html>
