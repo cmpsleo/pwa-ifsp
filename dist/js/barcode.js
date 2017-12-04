@@ -1,8 +1,14 @@
 $('body').on('click', '.code-scan', function() {
+  var width = $(window).width();
+
   Quagga.init({
     inputStream : {
       name : "Live",
-      type : "LiveStream"
+      type : "LiveStream",
+      constraints: {
+        width: width,
+        height: 233
+      }
     },
     decoder : {
       readers : ["code_128_reader"]

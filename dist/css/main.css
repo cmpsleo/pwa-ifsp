@@ -7,3 +7,18 @@ figure { margin: 0; }
     height: auto;
     display: block;
 }
+
+.modal {
+    width: 100%;
+    padding: 0;
+}
+
+.modal .modal-content { padding: 0; }
+
+.modal .modal-content h5 { text-align: center; }
+
+.drawingBuffer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
