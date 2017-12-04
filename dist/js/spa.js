@@ -30,7 +30,7 @@ $('body').on('submit', 'form', function(){
 
 	var title = 'Pagamento confirmado';
 	var options = {
-		icon: 'img/icon.png', 
+		icon: './dist/img/icon.png', 
 		body: 'Saída liberada até ' + saida.getHours() + 'h' + ("0" + (saida.getMinutes() + 1)).slice(-2)
 	};
 

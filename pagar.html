@@ -22,14 +22,6 @@
                     </ul>
 
                     <a class="brand-logo">Pagamento</a>
-
-                    <ul class="right">
-                        <li>
-                            <a href="javascript:;">
-                                <i class="material-icons dropdown-button" data-activates="more-itens">more_vert</i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </nav>
@@ -37,7 +29,7 @@
 
     <main>
         <section class="container">
-            <form method="post">
+            <form method="post" action="">
                 <div class="row">
                     <div class="input-field col s8">
                         <label for="codigo_ticket">Código Ticket</label>
@@ -93,8 +85,8 @@
 
         $toggleNav.sideNav();
 
-        $(".dropdown-button").dropdown(); //inicia dropdown
-        $('.tabs').tabs(); //inicia abas
+        $(".dropdown-button").dropdown();
+        $('.tabs').tabs();
         $('.modal').modal({
             dismissible: false,
             complete: function() { 
